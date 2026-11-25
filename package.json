@@ -1,0 +1,10 @@
+{
+  "name": "dumbest-agent-entry",
+  "version": "1.0.0",
+  "description": "Entry for The Dumbest Thing Your Agent Did Today",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "license": "MIT"
+}
