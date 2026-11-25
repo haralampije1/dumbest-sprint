@@ -20,3 +20,7 @@ if (!fs.existsSync(outputDir)) {
 fs.writeFileSync(outputFile, entry, 'utf8');
 console.log('Entry written:', entry);
 console.log('Length:', entry.length, 'chars');
+
+// Verify the entry was written correctly
+const written = fs.readFileSync(outputFile, 'utf8');
+console.log('Verified:', written === entry ? 'OK' : 'FAIL');
